@@ -1,0 +1,50 @@
+.bottom_up{
+    position: fixed;
+    z-index: 100;
+    right: 20rem;
+    width: 5rem;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--color_primary);
+    animation: buttonAnimate 0.3s forwards alternate;
+}
+@keyframes buttonAnimate {
+    0%{
+        bottom: 0rem;
+        opacity: 0;
+    }
+    25%{
+        bottom: 0.5rem;
+        opacity: 0.25;
+    }
+    50%{
+        bottom: 1rem;
+        opacity: 0.5;
+    }
+    75%{
+        bottom: 1.5rem;
+        opacity: 0.75;
+    }
+    100%{
+        bottom: 2rem;
+        opacity: 1;
+    }
+}
+.bottom_up > a{
+    color: black;
+}
+.bottom_up_btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 3rem;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bottom_up_btn:hover{
+    top: 40%;
+}
