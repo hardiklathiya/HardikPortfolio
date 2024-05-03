@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://hardiklathiya.github.io/HardikPortfolio",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
