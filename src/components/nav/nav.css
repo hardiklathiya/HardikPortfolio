@@ -101,7 +101,7 @@
 @media (max-width:400px){
     .navigation{
         bottom: 5rem;
-        left: 41%;
+        left: 50%;
         transform: translateX(-50%);
     }
     
