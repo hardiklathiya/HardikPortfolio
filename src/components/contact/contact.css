@@ -1,0 +1,116 @@
+.contact1_white{
+    color: black;
+    font-weight: bold;
+    
+}
+.contact1,.contact1_white{
+    font-size: 1.3rem;
+}
+.contact2{
+    color: var(--color_primary);
+    
+}
+.contact2_white{
+    color: var(--color_bg);
+}
+.contact2,.contact2_white{
+    font-size: 1.7rem;
+}
+.contact_container{
+    margin-top: 5rem;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 5rem;
+}
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+.contact_option{
+    background-color: var(--color_bg_variant);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--color_bg_variant);
+    border-radius: 1rem;
+    padding: 1rem 3rem 2rem 3rem;
+}
+.contact_icon{
+    font-size: 1.6rem;
+    color: var(--color_primary);
+    margin-bottom: 0.5rem;
+}
+.contact_media{
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+}
+.contact_address{
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+    color: silver;
+
+}
+.contact_link{
+    color: var(--color_primary);
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.contct_form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.contact_input,.contact_input_white{
+    width: 100%;
+    max-width: 100%;
+    max-height: 20vh;
+    background-color: transparent;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color_bg_variant);
+    border-radius: 1rem;
+}
+.contact_input_white{
+    color: black;
+}
+.contact_input::placeholder{
+    color: silver;
+}.contact_input_white::placeholder{
+    color: var(--color_bg);
+}
+.contact_input:focus{
+    caret-color: lavender;
+}
+
+.btn{
+    width: max-content;
+}
+.error{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    margin-top: -1rem;
+}
+.error_white{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    margin-top: -1rem;
+}
+.success,.success_white{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: rgb(163, 240, 163);
+    font-weight: bold;
+}
+.success_white{
+    color: rgb(27, 77, 27);
+}

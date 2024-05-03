@@ -1,0 +1,213 @@
+.chat_section{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    width: 5.5rem;
+    background-color: #03A84E;
+    height: 5.5rem;
+    cursor: pointer;
+    /* opacity: 0; */
+    z-index: 100;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+.chat{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-30%);
+    font-size: 3.5rem;
+    color: white;
+    height: 100%;
+}
+.close{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-20%,-30%);
+    font-size: 3.5rem;
+    
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.contact_us{
+    position: fixed;
+    right: 3rem;
+    bottom: 13rem;
+    width: 30rem;
+    height: 60vh;
+    border-radius: 1rem;
+    /* transition: all 1s ease-in-out; */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F9;
+    border: 1px solid #DDD;
+    /* animation: animateChat 0.5s alternate forwards; */
+    /* opacity: 0; */
+}
+
+
+
+
+.contact_us .title_section{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color:  #03A84E;
+    height: 10rem;
+    height: 20%;
+    
+}
+.contact_us .title_chat{
+    font-size: 2rem;
+    color: white;
+}
+.contact_us .form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 1rem;
+    top: 3rem;
+    width: 90%;
+    border: 1px solid #ddd;
+    height: 90%;
+    border-radius: .5rem;
+}
+.contact_us .form .form_div{
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    /* justify-content: flex-start; */
+    width: 100%;
+    /* background-color: yellow; */
+    height: auto;
+  
+}
+.contact_us .form .form_div .input_group{
+    border-radius: 0.5rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    border: 1px solid var(--color_bg);
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 20rem;
+}
+.contact_us .form .form_div .textarea{
+    border-radius: 0.5rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+   
+    border: 1px solid var(--color_bg);
+    font-size: 1.4rem;
+    width: 20rem;
+    max-width: 20rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    max-height: 5rem;
+    height: 5rem;
+    
+}
+textarea::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+textarea::-webkit-scrollbar-track {
+    background: rgba(0,0,0,1);
+  }
+  
+  /* Handle */
+  textarea::-webkit-scrollbar-thumb {
+    background:grey;
+    border-radius: 0.3rem;
+  }
+  
+  /* Handle on hover */
+  textarea::-webkit-scrollbar-thumb:hover {
+    background: rgba(211, 211, 211, 0.377);
+  }
+label{
+    font-size: 1.2rem;
+}
+
+::placeholder{
+    color: var(--color_bg);
+}
+.submit_data{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    background-color: #03A84E;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.7rem;
+    transition: all 0.5s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+.submit_data:hover{
+    background-color: #17e574;
+    color: var(--color_bg);
+
+}
+.error{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    margin-top: -1rem;
+}
+.error_white{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    margin-top: -1rem;
+}
+.success,.success_white{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: rgb(163, 240, 163);
+    font-weight: bold;
+}
+.success_white{
+    color: rgb(27, 77, 27);
+}
+/* media queries */
+@media (max-width:1124px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .chat_section{
+        right: 2rem;
+    }
+}
+
+@media (max-width:600px){
+    .chat_section{
+        display: none;
+    }
+}
+
+@keyframes animation_chat {
+    from{
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,108 @@
+.navigation{
+    background-color: rgba(0,0,0,0.3);
+    width: max-content;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10rem;
+    z-index: 2;
+    display: flex;
+    gap: 2rem;
+    border-radius:2rem ;
+    backdrop-filter: blur(10rem);
+    align-items: center;
+    opacity: 0;
+    justify-content: center;
+    animation: navbar 2s forwards ;
+}
+@keyframes navbar {
+    0%{
+        bottom: 0rem;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 2rem;
+        opacity: 1;
+    }
+}
+.navigation ul{
+    display: flex;
+    width: 35rem;
+}
+.navigation ul li{
+    position: relative;
+    width: 35rem;
+    height: 4.5rem;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 4.5rem;
+    text-align: center;
+    transition: 0.5s ;
+    color: var(--color_light);
+    font-size: 1.7rem;
+  
+}
+.navigation ul li a:hover .icon{
+    transform: translateY(-2.2rem);
+    opacity: 0;
+    color: var(--color_bg);
+}
+.navigation ul li a .text{
+    position: absolute;
+    color: var(--color_light);
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
+    letter-spacing:0.05rem ;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(1rem);
+}
+.navigation ul li a:hover .text{
+    opacity: 1;
+    transform: translateY(-0.1rem);
+    color: rosybrown;
+}
+.navigation ul .active a .icon{
+        color: rosybrown;
+}
+
+@media (max-width:1024px) {
+    .navigation{
+        bottom: 5rem;
+    }
+}
+
+@media (max-width:600px) {
+   
+    .navigation ul li a:hover .icon{
+    color: lavenderblush;
+    transform: translateX(0);
+    opacity: 1;
+        }
+    .navigation ul li a:hover .text{
+        display: none;
+    }
+  
+}
+@media (max-width:400px){
+    .navigation{
+        bottom: 5rem;
+        left: 41%;
+        transform: translateX(-50%);
+    }
+    
+}
