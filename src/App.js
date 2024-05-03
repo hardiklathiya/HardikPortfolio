@@ -9,10 +9,10 @@ import Portfolio from './components/Portfolio/Portfolio'
 import { useState } from 'react';
 import Chat from './components/chat/Chat';
 import BottomUpButton from './components/uparrow/BottomUpButton';
-import Loader from './components/loader/Loader';
+// import Loader from './components/loader/Loader';
 
 function App() {
-  const [loader, setLoader] = useState(true)
+  // const [loader, setLoader] = useState(true)
   const [mode, setMode] = useState('dark')
   const toggleMode=()=>{
     if(mode==='dark'){
@@ -30,18 +30,18 @@ function App() {
 
     }
   }
-  let loading=document.getElementById("loader");
+  // let loading=document.getElementById("loader");
  
-  if(loading){
-    setTimeout(() => {
-      loading.style.display="none";
-      setLoader(false)
-    },loader);
-  }
+  // if(loading){
+  //   setTimeout(() => {
+  //     loading.style.display="none";
+  //     setLoader(false)
+  //   },loader);
+  // }
   
   return (
     <>
-     {loader?<Loader/>:
+     {/* {loader?<Loader/>: */}
       <>
     <Header toggleMode={toggleMode} mode={mode}/>
     <Chat/>
@@ -52,7 +52,8 @@ function App() {
     <Portfolio mode={mode}/>
     <Contact mode={mode}/>
     <Footer mode={mode}/>
-    <BottomUpButton mode={mode}/></>}
+    <BottomUpButton mode={mode}/></>
+    {/* } */}
     </>
   );
 }
