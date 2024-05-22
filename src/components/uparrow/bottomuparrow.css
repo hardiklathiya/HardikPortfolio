@@ -48,3 +48,9 @@
 .bottom_up_btn:hover{
     top: 40%;
 }
+@media (max-width:400px){
+    .bottom_up{
+
+        display: none;
+    }
+}

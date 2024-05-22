@@ -85,7 +85,11 @@
         bottom: 5rem;
     }
 }
-
+@media (max-width:1024px) and (min-width:600px){
+    .navigation ul{
+        width: 50rem;
+        }
+}
 @media (max-width:600px) {
    
     .navigation ul li a:hover .icon{

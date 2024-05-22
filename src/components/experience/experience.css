@@ -1,3 +1,6 @@
+#experience{
+  margin-top: 15rem;
+}
 .exp1,
 .exp1_white {
   padding-top: 1rem;
@@ -21,8 +24,8 @@
 }
 .experience_container {
   width: 70%;
-  /* opacity: 0; */
-  height: 60vh;
+
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -59,7 +62,7 @@
   flex-wrap: wrap;
   grid-template-columns: repeat(3,1fr);
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding-top: 2rem;
   flex-direction: row;
   flex-wrap: wrap;
@@ -116,10 +119,14 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: 2rem;
- 
+    padding: 1rem;
+    
   }
 section{
     height: auto;
+}
+.experience_content{
+  grid-template-columns: repeat(2,1fr);
 }
 }
 

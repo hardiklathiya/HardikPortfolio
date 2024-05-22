@@ -1,5 +1,5 @@
 #services{
-    margin-top: 0rem;
+    margin-top: 15rem;
 }
 .service1_white{
     color: black;
@@ -87,7 +87,7 @@
     .service,.service_white{
         width: 80%;
 
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     
     }
     
@@ -95,6 +95,6 @@
 }
 @media (max-width:600px){
     #services{
-        margin-top: 15rem;
+        margin-top: 0rem;
     }
 }
